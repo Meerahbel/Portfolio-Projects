@@ -40,11 +40,6 @@ foreign key (Donor_id) references blood_donor(Donor_id)
 select*
 from blood_bank;
 
-alter table other_hospitals
-add Date_requested datetime;
-
-drop table blood_bank;
-
 -- Insert rows into tables created
 -- For blood_donor table
 
@@ -81,9 +76,6 @@ insert into blood_recipient values(
 'Ogbormeh Blessing', 20, 'B+', '2023-03-27 10:55:30');
 insert into blood_recipient values(
 'Ogbonna Olachi', 21, 'O+', '2023-03-30 08:14:33');
-
-delete from blood_recipient
-where Name= 'Ogbonna Olachi';
 
 -- For other_hospitals table
 
